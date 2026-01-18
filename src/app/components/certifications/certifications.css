@@ -1,0 +1,124 @@
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+.section-title {
+      font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 209, 255, 0.2);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.cert-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Effet au survol : Bordure et ombre bleues */
+.cert-card:hover {
+  border-color: #00d1ff;
+  box-shadow: 0 0 20px rgba(0, 209, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.cert-icon {
+  width: 24px;
+  height: 24px;
+  color: #00d1ff; /* Couleur de l'icône badge */
+}
+
+.external-link-icon {
+  width: 18px;
+  height: 18px;
+  color: #64748b;
+  transition: color 0.2s;
+}
+
+.cert-card:hover .external-link-icon {
+  color: #00d1ff;
+}
+
+.cert-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f8fafc;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+/* Le texte devient bleu au survol */
+.cert-card:hover .cert-name {
+  color: #00d1ff;
+}
+
+.cert-issuer {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.cert-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cert-date {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* Responsive pour tablettes/mobiles */
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Rend le lien invisible visuellement mais actif sur toute la surface */
+.cert-card-link {
+  text-decoration: none;
+  color: inherit; /* Garde les couleurs blanc/gris définies */
+  display: block;
+  height: 100%;
+  padding: 25px; /* On déplace le padding de la .cert-card vers ici */
+}
+
+.cert-card {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0; /* Important: mis à 0 car le padding est maintenant dans le lien */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Effet au survol identique à vos edu-cards */
+.cert-card:hover {
+  border-color: #00d1ff;
+  transform: translateY(-5px);
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.cert-card:hover .external-link-icon {
+  color: #00d1ff;
+  transform: scale(1.1);
+}

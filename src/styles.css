@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-dark: #050a18;
+  --card-bg: #0f172a;
+  --accent-blue: #00d1ff;
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2, h3 { color: var(--text-main); }
+
+/* Style commun pour les cartes (Sections) */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+section {
+  padding: 50px 0; /* Réduit pour un espacement plus serré mais aéré */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Badges (Pills) pour les compétences */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(0, 209, 255, 0.1);
+  color: var(--accent-blue);
+  font-size: 0.85rem;
+  margin: 4px;
+  border: 1px solid rgba(0, 209, 255, 0.2);
+}

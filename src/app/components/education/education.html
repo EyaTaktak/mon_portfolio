@@ -1,0 +1,26 @@
+<p></p>
+<section class="section">
+  <h2 class="section-title">Education</h2>
+
+  <div class="edu-list">
+    <div *ngFor="let e of list" class="edu-card">
+      <div class="edu-header">
+        <div class="edu-title-group">
+          <h3 class="school-name">
+            <a *ngIf="e.schoolUrl" [href]="e.schoolUrl" target="_blank">{{e.school}}</a>
+            <span *ngIf="!e.schoolUrl">{{e.school}}</span>
+          </h3>
+          <p class="degree-text">{{e.degree}}</p>
+        </div>
+        <span class="edu-period">{{e.period}}</span>
+      </div>
+
+      <div class="courses-section" *ngIf="e.courses && e.courses.length > 0">
+        <p class="courses-label">Key Courses:</p>
+        <div class="course-badges">
+          <span class="course-badge" *ngFor="let course of e.courses">{{course}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,132 @@
+.footer {
+  background-color: #050a18; /* Fond très sombre cohérent avec le site */
+  padding: 60px 0 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.footer-section h3, .footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.bio { flex: 2; } /* Prend plus de place à gauche */
+.bio p {
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+.links { flex: 1; }
+.links ul { list-style: none; padding: 0; }
+.links li { margin-bottom: 12px; }
+.links a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.links a:hover { color: #00d1ff; }
+
+.connect { flex: 1; }
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Style des petits carrés d'icônes */
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background: rgba(30, 41, 59, 0.5); /* Gris bleuté sombre */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.icon-box:hover {
+  background: #1e293b;
+  color: #00d1ff;
+  transform: translateY(-3px);
+}
+
+/* Barre de copyright en bas */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding: 25px 20px 0 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.crafted-text {
+  font-style: italic;
+}
+/* Conteneur des icônes */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Style des petits carrés grisés */
+.icon-box {
+  width: 42px;
+  height: 42px;
+  background: rgba(30, 41, 59, 0.4); /* Fond sombre bleuté */
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Ajustement des images SVG à l'intérieur */
+.icon-box img {
+  width: 20px;
+  height: 20px;
+  /* Si vos SVG sont noirs, cette ligne les rendra blancs pour le thème sombre */
+  filter: brightness(0) invert(1); 
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.icon-box:hover {
+  background: rgba(30, 41, 59, 0.8);
+  transform: translateY(-3px);
+  border-color: #00d1ff; /* Accent bleu au survol */
+}
+
+.icon-box:hover img {
+  opacity: 1;
+}
+/* Responsive pour Mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

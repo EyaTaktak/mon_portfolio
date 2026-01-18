@@ -1,0 +1,107 @@
+.section-title {
+    font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 209, 255, 0.2);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-card {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+/* Effet de bordure bleue au survol comme sur tes photos */
+.edu-card:hover {
+  border-color: #00d1ff;
+  transform: translateX(5px);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(15px, 2vh, 25px); /* Espace flexible entre les cartes */
+  width: 100%;
+  max-width: 1100px; /* Aligné avec votre hero-content */
+}
+
+.edu-card {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: clamp(15px, 3vw, 30px); /* Padding interne adaptatif */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
+.school-name a, .school-name span {
+  color: #ffffff;
+  font-size: clamp(1.1rem, 2vw, 1.4rem); /* Nom de l'école adaptatif */
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.degree-text {
+  color: #00d1ff; /* Couleur turquoise pour le diplôme */
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.edu-period {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.courses-label {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.course-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.course-badge {
+  background: rgba(0, 209, 255, 0.05);
+  border: 1px solid rgba(0, 209, 255, 0.3);
+  color: #00d1ff;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  transition: all 0.2s;
+}
+
+.course-badge:hover {
+  background: #00d1ff;
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .edu-header {
+    flex-direction: column;
+  }
+  .edu-period {
+    margin-top: 10px;
+  }
+}

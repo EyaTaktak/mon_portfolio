@@ -1,59 +1,57 @@
-# Portfolio
+# Portfolio — English
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+This repository contains a personal portfolio built with Angular. The site displays About, Projects, Certifications, Skills, and Experience sections with a dynamic color theme that responds to mouse movement.
 
-## Development server
+Quick start (development)
 
-To start a local development server, run:
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run dev server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open http://localhost:4200
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Build (production)
 
 ```bash
-ng generate component component-name
+ng build --configuration production
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Docker (build and serve)
+
+1. Build the Docker image:
 
 ```bash
-ng generate --help
+docker build -t portfolio-app .
 ```
 
-## Building
-
-To build the project run:
+2. Run the container:
 
 ```bash
-ng build
+docker run -p 8080:80 portfolio-app
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Open http://localhost:8080
 
-## Running unit tests
+What I added or improved
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- Multi-stage `Dockerfile` and `nginx.conf` for serving the built app.
+- Global dynamic color background (mouse-driven) in `src/styles.css`.
+- `src/app/data.ts` contains structured sample data for Projects, Certifications, Skills, Experience and About.
+- Components updated to read from `data.ts` and render content in English.
 
-```bash
-ng test
-```
+If you want more custom content (your own projects, links, or translations), open `src/app/data.ts` and replace the sample entries.
 
-## Running end-to-end tests
+If you'd like, I can also:
 
-For end-to-end (e2e) testing, run:
+- Add more styling or animations
+- Export a printable résumé page
+- Add contact form with form handling
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

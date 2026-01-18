@@ -1,0 +1,166 @@
+.section-title {
+    font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 209, 255, 0.2);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.task-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  color: #e2e8f0; /* Gris très clair pour la lisibilité */
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Création du point turquoise stylisé */
+.task-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px; 
+  width: 6px;
+  height: 6px;
+  background-color: #00d1ff; /* Turquoise */
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 209, 255, 0.5); /* Effet de lueur */
+}
+
+/* On cache la puce par défaut du texte si elle existe encore */
+.preview-text {
+  color: #94a3b8;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.experience-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 4px solid #07709c;
+  background: rgba(15, 23, 42, 0.4); /* Fond sombre */
+  padding: 25px;
+  cursor: pointer;
+}
+/* Le wrapper qui gère l'animation grid */
+.expandable-content {
+  display: grid;
+  grid-template-rows: 0fr; /* Fermé par défaut */
+  transition: grid-template-rows 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+.experience-card:hover {
+  transform: translateX(10px);
+}
+.inner-content {
+  overflow: hidden; /* Obligatoire pour l'effet grid-rows */
+}
+
+/* --- EFFET AU SURVOL --- */
+.experience-card:hover {
+  transform: translateX(10px);
+  border-left-color: #00d1ff; /* Accentuation du bleu */
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.experience-card:hover .expandable-content {
+  grid-template-rows: 1fr; /* S'ouvre dynamiquement */
+  opacity: 1;
+  margin-top: 15px;
+}
+
+.experience-card:hover .preview-text {
+  display: none; /* Cache l'aperçu quand tout est ouvert */
+}
+
+.experience-card:hover .expand-indicator {
+  opacity: 0;
+}
+
+/* Petite indication visuelle en bas de carte */
+.expand-indicator {
+  font-size: 0.75rem;
+  color: #00d0ffb5;
+  margin-top: 10px;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+/* Style des compétences à l'intérieur de l'extension */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.main-description {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.company-name {
+  color: #00d1ff;
+  font-weight: 600;
+  display: block;
+}
+
+.duration {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.task-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Le petit point bleu devant chaque mission */
+.task-list li::before {
+  content: "•";
+  color: #00d0ff83;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.company-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #00bbffa4;
+  text-decoration: none;
+  font-size: 0.85rem;
+}

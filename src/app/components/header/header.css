@@ -1,0 +1,138 @@
+
+/* ============ NAVBAR ============ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  /* Bleu foncé non transparent */
+background: linear-gradient(
+    90deg,
+    oklch(0.08 0 0 / 0.8), /* Ajout d'opacité pour le flou */
+    oklch(0.12 0.02 250 / 0.8)
+  );
+
+  padding: 1rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+.nav-left {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Logo à gauche, liens à droite */
+  align-items: center;
+}
+/* ============ GAUCHE : NOM ============ */
+.nav-logo {
+  color: #04c0ebf4; /* Bleu turquoise du nom */
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.nav-logo:hover {
+  color: rgba(0, 209, 255, 1);
+  transform: scale(1.05);
+}
+
+/* ============ DROITE : MENU ============ */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Effet underline moderne */
+.nav-link li a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgba(0, 209, 255, 0.8);
+  transition: width 0.3s ease;
+}
+
+.nav-link li a:hover {
+  color: rgba(0, 209, 255, 0.9);
+}
+
+.nav-link li a:hover::after {
+  width: 100%;
+}
+
+
+
+.navbar {
+  position: fixed; /* Reste en haut au défilement */
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(10, 17, 32, 0.8); /* Fond sombre transparent */
+  backdrop-filter: blur(10px); /* Effet de flou */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Logo à gauche, liens à droite */
+  align-items: center;
+}
+
+.nav-logo {
+  color: #00d1ff; /* Bleu turquoise du nom */
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px; /* Espace entre les liens */
+  list-style: none;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  opacity: 0.8;
+}
+
+.nav-link:hover {
+  color: #00d1ff;
+  opacity: 1;
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Cache les liens sur petit écran ou utilisez un menu burger */
+  }
+}
+/* ============ ESPACE POUR LE CONTENU ============ */
+main.main {
+  padding-top: 90px;
+}
