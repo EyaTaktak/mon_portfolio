@@ -102,7 +102,7 @@ export const EDUCATION = [
     ]
   },
   {
-    school: "IPEIT __ Preparatory Cycle",
+    school: "IPEIT | Preparatory Cycle",
     schoolUrl: "http://www.ipeit.rnu.tn/",
     degree: "Mathematics and Physics Student (MP)",
     period: "September 2021 – May 2023",
@@ -151,7 +151,7 @@ and simulate optimized energy consumption.
     context: 'Green AI Hackathon',
     description: `
 CNN-based model using ResNet18 to classify solar panel conditions
-for predictive maintenance.
+for predictive maintenance.  
     `,
     date: '2025',
     tools: [

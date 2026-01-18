@@ -28,5 +28,4 @@ jobs:
           context: .
           push: true
           # L'image sera nommée : ghcr.io/ton-pseudo/mon-portfolio:latest
-          tags: ghcr.io/${{ github.repository }}:latest
           tags: ghcr.io/eyataktak/mon_portfolio:latest
