@@ -24,6 +24,7 @@ export const EXPERIENCE = [
   {
     role: 'Technical Internship – Check Amount Prediction Project',
     company: 'BFI Group',
+    logo: 'assets/bfi_logo.svg',
     link: 'https://bfigroupe.com/',
     duration: 'August – September 2025',
 description: `Designed and implemented a complete end-to-end check image processing pipeline, from image preprocessing to handwritten text recognition. 
@@ -58,6 +59,7 @@ skills: [
     role: 'Worker Internship – AI Exploration',
     company: 'BFI Group',
     link: 'https://bfigroupe.com/',
+    logo: 'assets/bfi_logo.svg',
     duration: 'July 2025',
     description: `Explored and fine-tuned multiple artificial intelligence and deep learning models for document analysis and computer vision tasks.
 Conducted comparative experiments to evaluate model performance, robustness, and suitability for real-world check processing use cases.
@@ -92,6 +94,7 @@ export const EDUCATION = [
     schoolUrl: "https://enstab.tn/",
     degree: "Advanced Technologies Student (AT)",
     period: "September 2023 – Present",
+    logo: 'assets/Enstab-logo.png',
     courses: [
       "Cloud Computing",
       "Java",
@@ -104,6 +107,7 @@ export const EDUCATION = [
   {
     school: "IPEIT | Preparatory Cycle",
     schoolUrl: "http://www.ipeit.rnu.tn/",
+    logo: 'assets/ipeit-logo.jpg',
     degree: "Mathematics and Physics Student (MP)",
     period: "September 2021 – May 2023",
     courses: ["Analysis", "Algebra", "Python", "SQL"]
@@ -111,6 +115,7 @@ export const EDUCATION = [
   {
     school: "Kheireddine High School, Ariana",
     schoolUrl: "",
+    logo: 'assets/lycee.png',
     degree: "Experimental Sciences Baccalaureate",
     period: "September 2020 – May 2021",
     courses: []
@@ -119,13 +124,13 @@ export const EDUCATION = [
 // ===========================
 // PROJECTS
 // ===========================
-export const PROJECTS = [
+export const PROJECTS = [ 
   {
     name: 'Energy Optimization for Buildings',
     context: 'Green AI Hackathon',
     description: `
-Unsupervised learning system to detect energy waste in office buildings
-and simulate optimized energy consumption.
+Système d'apprentissage non supervisé pour détecter le gaspillage énergétique
+dans les bâtiments de bureaux et simuler une consommation optimisée.
     `,
     date: '2025',
     tools: [
@@ -141,8 +146,8 @@ and simulate optimized energy consumption.
       'Feature Engineering',
       'Unsupervised Learning',
       'Anomaly Detection',
-      'Energy Optimization Simulation',
-      'Visualization and Reporting'
+      'Energy Optimization',
+      'Visualization'
     ],
     link: 'https://www.kaggle.com/code/eyats1/optim-energy'
   },
@@ -150,24 +155,25 @@ and simulate optimized energy consumption.
     name: 'Solar Panel Image Classification',
     context: 'Green AI Hackathon',
     description: `
-CNN-based model using ResNet18 to classify solar panel conditions
-for predictive maintenance.  
+Modèle CNN basé sur ResNet18 pour classifier l’état des panneaux solaires
+pour la maintenance prédictive. Accuracy d'environ 95%.
     `,
     date: '2025',
     tools: [
       'PyTorch',
       'Torchvision',
       'CNN',
+      'ResNet18',
       'Transfer Learning',
       'Data Augmentation'
     ],
     skills: [
-      'Convolutional Neural Networks (CNN)',
+      'CNN',
       'Image Classification',
-      'Data Preprocessing & Augmentation',
+      'Data Preprocessing',
+      'Data Augmentation',
       'Transfer Learning',
-      'Model Evaluation and Optimization',
-      'Predictive Maintenance Applications'
+      'Model Evaluation'
     ],
     link: 'https://www.kaggle.com/code/eyats1/classification-des-images-de-pv-d-fectueux'
   },
@@ -175,8 +181,8 @@ for predictive maintenance.
     name: 'Air Quality Classification (Multimodal AI)',
     context: 'ENSTA-B Project',
     description: `
-Multimodal deep learning system combining images and sensor data.
-Databricks ETL pipeline using Medallion Architecture.
+Système de deep learning multimodal combinant images et données capteurs
+avec pipeline ETL Databricks (Medallion Architecture).
     `,
     date: '2025',
     tools: [
@@ -188,13 +194,13 @@ Databricks ETL pipeline using Medallion Architecture.
       'Computer Vision'
     ],
     skills: [
-      'Multimodal Data Integration',
-      'Deep Learning Modeling',
-      'ETL Pipelines',
-      'Data Cleaning & Transformation',
       'Feature Engineering',
+      'Multimodal Learning',
+      'Deep Learning',
+      'ETL Pipelines',
+      'Data Cleaning',
       'Air Quality Prediction',
-      'Model Deployment & Evaluation'
+      'Model Deployment'
     ],
     link: 'https://www.kaggle.com/code/eyats1/multi-modal-air-quality-classification'
   },
@@ -202,8 +208,8 @@ Databricks ETL pipeline using Medallion Architecture.
     name: 'Medical Office Platform',
     context: 'ENSTA-B Project',
     description: `
-Intelligent web platform for medical appointment management
-with a deep learning model for skin disease prediction.
+Plateforme web intelligente pour la gestion des rendez-vous médicaux
+avec un modèle CNN VGG16 pour prédire les maladies cutanées (accuracy ~97%).
     `,
     date: '2024',
     tools: [
@@ -211,47 +217,64 @@ with a deep learning model for skin disease prediction.
       'MySQL',
       'HTML',
       'CSS',
+      'Xampp',
       'Deep Learning',
-      'Transfer Learning'
+      'Transfer Learning',
+      'VGG16'
     ],
     skills: [
-      'Full-Stack Web Development',
-      'Database Design & Management',
-      'Backend API Development',
-      'Deep Learning for Image Analysis',
+      'Full-Stack Development',
+      'Database Design',
+      'API Development',
+      'CNN',
+      'VGG16',
       'Transfer Learning',
-      'UX/UI Design',
-      'Healthcare Application Development'
+      'UX/UI Design'
     ],
     link: 'https://github.com/EyaTaktak/Cabinet_Medical'
   },
   {
-    name: 'Intelligent Medical Drone Delivery Platform',
+    name: 'Intelligent Medical Drone Delivery Mobile Application',
     context: 'ENSTA-B Project',
     description: `
-Autonomous medical delivery system with object detection
-and a mobile application for order management.
+Application mobile pour gérer les commandes et la livraison par drones autonomes.
     `,
-    date: '2025',
+    date: '2024',
     tools: [
-      'YOLO',
-      'OpenCV',
-      'Python',
       'Flutter',
       'Dart',
       'Firebase'
     ],
     skills: [
-      'Object Detection & Tracking',
-      'Computer Vision for Autonomous Navigation',
-      'Mobile Application Development',
-      'Backend Integration with Firebase',
-      'Autonomous Systems',
-      'User Interface & Experience Design'
+      'Mobile Development',
+      'Firebase Integration',
+      'UI/UX Design'
     ],
     link: 'https://github.com/EyaTaktak/Drone-Application'
+  },
+  {
+    name: 'Object Detection for Medical Drone Delivery Platform',
+    context: 'ENSTA-B Project',
+    description: `
+Détection d’objets pour le système de drones médicaux autonomes
+avec YOLO et OpenCV pour navigation.
+    `,
+    date: '2024',
+    tools: [
+      'YOLO',
+      'OpenCV',
+      'Python',
+      'Computer Vision'
+    ],
+    skills: [
+      'Object Detection',
+      'Computer Vision',
+      'Autonomous Navigation'
+    ],
+    link: 'https://github.com/EyaTaktak/Yolo_model'
   }
 ];
+
 
 
 // ===========================
@@ -261,39 +284,69 @@ export const CERTIFICATIONS = [
   {
     name: 'Building LLM Applications With Prompt Engineering',
     issuer: 'NVIDIA',
-    date: '2025',
+    date: 'dec 2025',
+    logo: 'assets/nvidia_logo.png',
     link: 'https://learn.nvidia.com/certificates?id=b2KTSeDCTvarUQ3AQgsk1A'
-  },
-  {
-    name: 'Advanced Artificial Intelligence Training: From Machine Learning to Deep Learning Deployment',
-    issuer: 'ENSTA-B',
-    date: '2025',
-    link: 'https://drive.google.com/file/d/1vs4InVJs0UL0PYyHLNbCtZHqljJ3W3uL/view?usp=drive_link'
   },
   {
     name: 'AWS Educate Machine Learning Foundations - Training Badge',
     issuer: 'AWS',
-    date: '2025',
+    date: 'dec 2025',
+    logo: 'assets/aws.svg',
     link: 'https://www.credly.com/badges/8e278b16-e13f-4d98-bbfa-797f109740f4'
   },
   {
+    name: 'Advanced Artificial Intelligence Training: From Machine Learning to Deep Learning Deployment',
+    issuer: 'ENSTA-B',
+    date: 'oct 2025 - dec 2025',
+    logo: 'assets/Enstab-logo.png',
+    link: 'https://drive.google.com/file/d/1vs4InVJs0UL0PYyHLNbCtZHqljJ3W3uL/view?usp=drive_link'
+  },
+  
+  {
     name: 'Get Started with Databricks for Data Engineering',
     issuer: 'Databricks',
-    date: '2025',
+    date: 'dec 2025',
+    logo: 'assets/databricks_logo.png',
     link: 'https://drive.google.com/file/d/1Ff2J9hoXY1v8Hfn6WUzemmemkN_1rKOZ/view?usp=sharing'
+  },{
+    name: 'Foundations of Web Development: CSS, Bootstrap, JS, React',
+    issuer: 'Udemy',
+    date: 'Apr 2025',
+    logo: 'assets/udemy-logo.png',
+    link: 'https://www.udemy.com/certificate/UC-a5ed768a-f25d-4f73-800b-914966a752d6/'
   },
+
   {
-    name: 'Introduction to Deep Learning and Neural Networks with Keras',
-    issuer: 'IBM',
-    date: '2024',
-    link: 'https://www.coursera.org/account/accomplishments/verify/RNB6DAKA34LV'
+    name: 'Hashgraph Developper Course',
+    issuer: 'Hedera',
+    date: 'Jan 2025',
+    logo: 'assets/hedera.png',
+    link: 'https://www.google.com/url?sa=D&q=https://certs.hashgraphdev.com/b523b6cc-b5a3-4a0e-9e04-846cb48df53b.pdf&ust=1768855740000000&usg=AOvVaw1jle-27xg0L3uQM3z72oqY&hl=fr&source=gmail'
   },
   {
     name: 'Deep Learning with TensorFlow 2',
     issuer: '365 Data Science',
-    date: '2024',
+    date: 'Nov 2024',
+    logo: 'assets/365_data_science_logo.png',
     link: 'https://learn.365datascience.com/certificates/CC-AA10C0880D/'
+  },{
+    name: 'Git and GitHub',
+    issuer: '365 Data Science',
+    date: 'Nov 2024',
+    logo: 'assets/365_data_science_logo.png',
+    link: 'https://learn.365datascience.com/certificates/CC-3899D6734A/'
+  },
+
+  {
+    name: 'Introduction to Deep Learning and Neural Networks with Keras',
+    issuer: 'IBM',
+    date: 'Jun 2024',
+    logo: 'assets/ibm_logo.svg',
+    link: 'https://www.coursera.org/account/accomplishments/verify/RNB6DAKA34LV'
   }
+  
+  
 ];
 
 // ===========================
@@ -301,27 +354,110 @@ export const CERTIFICATIONS = [
 // ===========================
 export const SKILLS = [
   {
-    category: "Languages & Web",
-    skills: ['Python', 'C/C++', 'Dart', 'Java', 'JavaScript', 'SQL', 'HTML', 'CSS', 'Angular'],
+    category: "Programming Languages & Web Technologies",
+    skills: [
+      'Python',
+      'C / C++',
+      'Java',
+      'JavaScript',
+      'TypeScript',
+      'Dart',
+      'SQL',
+      'HTML5',
+      'CSS3',
+      'Angular'
+    ],
+    icone: 'assets/1.gif',
     color: "blue"
   },
   {
-    category: "AI & Data Science",
+    category: "Artificial Intelligence & Machine Learning",
     skills: [
-      'Machine Learning', 'Deep Learning', 'Computer Vision', 'NLP', 
-      'Transfer Learning', 'Fine-Tuning', 'LLM', 'Prompt Engineering', 
-      'RAG', 'LangChain'
+      'Machine Learning',
+      'Deep Learning',
+      'Computer Vision',
+      'Natural Language Processing (NLP)',
+      'Transfer Learning',
+      'Model Fine-Tuning',
+      'Large Language Models (LLMs)',
+      'Prompt Engineering',
+      'Retrieval-Augmented Generation (RAG)',
+      'LangChain',
+      'Model Evaluation & Optimization'
     ],
+    icone: 'assets/assistant-ia1.gif',
     color: "cyan"
   },
   {
-    category: "Frameworks & Tools",
-    skills: ['PyTorch', 'TensorFlow / Keras', 'Scikit-learn', 'NumPy', 'Pandas', 'OpenCV', 'YOLO', 'Flask'],
+    category: "Data Engineering & ETL",
+    skills: [
+      'ETL / ELT Pipelines',
+      'Data Cleaning & Validation',
+      'Data Transformation',
+      'Medallion Architecture (Bronze / Silver / Gold)',
+      'Batch Processing',
+      'Data Quality & Monitoring'
+    ],
+    icone: 'assets/prg.gif',
+    color: "teal"
+  },
+  {
+    category: "Frameworks, Libraries & Visualization",
+    skills: [
+      'PyTorch',
+      'TensorFlow / Keras',
+      'Scikit-learn',
+      'NumPy',
+      'Pandas',
+      'OpenCV',
+      'YOLO',
+      'Matplotlib',
+      'Seaborn',
+      'Power BI',
+      'Flask'
+    ],
+    icone: 'assets/librairie1.gif',
     color: "purple"
   },
   {
-    category: "Cloud, DB & Soft Skills",
-    skills: ['MySQL', 'Firebase', 'Databricks', 'Problem Solving', 'Teamwork', 'Adaptability', 'Communication'],
+    category: "Cloud, DevOps & Data Platforms",
+    skills: [
+      'Databricks',
+      'Apache Spark (PySpark)',
+      'Docker',
+      'CI / CD Pipelines',
+      'REST APIs',
+      'Firebase',
+      'Linux Basics',
+      'Git & GitHub'
+    ],
+    icone: 'assets/cloud.gif',
     color: "green"
+  },
+  {
+    category: "Databases & Analytics Tools",
+    skills: [
+      'MySQL',
+      'SQL Optimization',
+      'Data Modeling',
+      'Excel (Advanced Formulas & Data Analysis)'
+    ],
+    icone: 'assets/db.png',
+    color: "yellow"
+  },
+  {
+    category: "Soft Skills",
+    skills: [
+      'Problem Solving',
+      'Analytical Thinking',
+      'Critical Thinking',
+      'Teamwork & Collaboration',
+      'Communication',
+      'Adaptability',
+      'Autonomous Learning'
+    ],
+    icone: 'assets/soft_skills.svg',
+    color: "orange"
   }
 ];
+

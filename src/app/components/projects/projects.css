@@ -38,22 +38,25 @@
 }
 
 .project-header {
-  display: flex;
-  justify-content: space-between;
+  width: 100%; /* Force le header à prendre toute la largeur */
   margin-bottom: 20px;
 }
 
 .project-header h3 {
-  color: #00d1ff; /* Titre bleu */
+  color: #00d1ff;
   font-size: 1.4rem;
   margin: 0;
   font-weight: 700;
 }
 
 .project-date {
-  color: #64748b;
+  color: #64748b; /* gris doux */
   font-size: 0.85rem;
+  margin-left: auto; /* force la date à aller complètement à droite */
+  white-space: nowrap; /* empêche le texte de se casser */
 }
+
+
 
 .project-description {
   color: #cbd5e1;
@@ -78,8 +81,37 @@
   border-radius: 20px;
   font-size: 0.8rem;
   border: 1px solid rgba(0, 209, 255, 0.2);
+  transition: all 0.3s ease; /* Animation fluide */
+  cursor: default; /* Indique que c'est un élément interactif visuellement */
+}
+/* État normal du badge (Sombre avec bordure bleue) */
+.course-badge, .tech-badge {
+  background: rgba(0, 209, 255, 0.05); /* Fond très léger */
+  border: 1px solid rgba(0, 209, 255, 0.3); /* Bordure semi-transparente */
+  color: #00d1ff; /* Texte bleu */
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
+/* L'EFFET HIGHLIGHT (Au survol de la souris) */
+.course-badge:hover, .tech-badge:hover {
+  background: #00d1ff !important; /* Fond bleu plein */
+  color: #0f172a !important;      /* Texte devient bleu très sombre/noir pour contraste */
+  border-color: #00d1ff;
+  transform: translateY(-3px);    /* Petit saut vers le haut */
+  box-shadow: 0 5px 15px rgba(0, 209, 255, 0.4); /* Lueur bleue intense */
+}
+/* --- L'EFFET HIGHLIGHT AU SURVOL DU BADGE --- */
+.tech-badge:hover {
+  background: rgba(0, 209, 255, 0.1); /* Fond bleu très léger */
+  color: #00d1ff;                /* Texte devient bleu néon */
+  border-color: #00d1ff;          /* Bordure devient bleu néon */
+  transform: translateY(-2px);    /* Petit saut vers le haut */
+  box-shadow: 0 4px 10px rgba(0, 209, 255, 0.2); /* Lueur sous le badge */
+}
 /* Boutons de liens (Kaggle/GitHub) */
 .external-link {
   display: inline-flex;
@@ -99,6 +131,27 @@
   background: #00d1ff;
   color: #050a18;
 }
+.title-area {
+  display: flex;
+  align-items: center;
+  width: 100%; /* CRUCIAL : permet à la date d'aller au bout à droite */
+  justify-content: space-between; /* Alternative propre à margin-left: auto */
+}
+
+.title-area h3 {
+  color: #00d1ff;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.title-area .project-date {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-left: auto;       /* pousse la date complètement à droite */
+  white-space: nowrap;     /* empêche le texte de passer à la ligne */
+}
+
 
 /* Adaptation pour mobile */
 @media (max-width: 1100px) {

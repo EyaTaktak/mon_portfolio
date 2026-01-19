@@ -4,9 +4,22 @@
   <div *ngFor="let e of list" class="card experience-card">
     <div class="card-header">
       <div class="header-left">
+                <img
+          *ngIf="e.logo"
+          [src]="e.logo"
+          [alt]="e.company + ' logo'"
+          class="company-logo"
+        />
+      <div class="company-info">
         <h3>{{e.role}}</h3>
-        <a *ngIf="e.link" [href]="e.link" target="_blank" class="company-name">{{e.company}}</a>
-      </div>
+        <a *ngIf="e.link" 
+        [href]="e.link" 
+        target="_blank" 
+        class="company-name"
+        >
+        {{e.company}}
+      </a>
+      </div> </div>
       <span class="duration">{{e.duration}}</span>
     </div>
 

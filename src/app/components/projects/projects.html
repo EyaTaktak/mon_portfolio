@@ -3,6 +3,7 @@
 
   <div class="projects-grid">
     <div *ngFor="let p of list" class="project-card">
+      
       <div class="project-header">
         <div class="title-area">
           <h3>{{p.name}}</h3>
@@ -13,15 +14,23 @@
       <p class="project-description">{{p.description}}</p>
 
       <div class="tech-stack">
-        <span class="tech-badge" *ngFor="let tool of p.tools">{{tool}}</span>
+        <span class="tech-badge" *ngFor="let tool of p.tools">
+          {{tool}}
+        </span>
+        
+        <span class="tech-badge skill-highlight" *ngFor="let skill of p.skills">
+          {{skill}}
+        </span>
       </div>
 
       <div class="project-footer">
         <a *ngIf="p.link" [href]="p.link" target="_blank" class="external-link">
           <span *ngIf="p.link.includes('kaggle')">🔗 Kaggle</span>
           <span *ngIf="p.link.includes('github')">📂 GitHub</span>
+          <span *ngIf="!p.link.includes('kaggle') && !p.link.includes('github')">🔗 View Project</span>
         </a>
       </div>
+
     </div>
   </div>
 </section>

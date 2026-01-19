@@ -1,3 +1,4 @@
+  <section class="section">
   <h2 class="section-title">Certifications</h2>
 <div class="cert-grid">
   <div *ngFor="let c of list" class="cert-card">
@@ -5,24 +6,36 @@
       
       <div class="cert-header">
         <div class="cert-icon-wrapper">
+          
           <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88"></path>
             <circle cx="12" cy="8" r="7"></circle>
           </svg>
+          
         </div>
         
-        <div class="external-link-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        
+      </div>
+
+      <div class="cert-body">
+        <h3 class="cert-name">{{c.name}}</h3>
+
+         <!-- Logo en haut à droite -->
+        <div class="cert-logo-wrapper">
+          <img [src]="c.logo" alt="{{c.issuer}} logo" class="cert-logo" />
+        </div>
+
+
+        <p class="cert-issuer">{{c.issuer}}</p>
+         <!-- Bouton View Credentials au-dessus -->
+        <div class="view-credentials">
+          <span>View Credentials</span>
+          <svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
             <polyline points="15 3 21 3 21 9"></polyline>
             <line x1="10" y1="14" x2="21" y2="3"></line>
           </svg>
         </div>
-      </div>
-
-      <div class="cert-body">
-        <h3 class="cert-name">{{c.name}}</h3>
-        <p class="cert-issuer">{{c.issuer}}</p>
       </div>
 
       <div class="cert-footer">

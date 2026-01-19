@@ -9,6 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './experience.css',
 })
 export class Experience {
-  list = EXPERIENCE;
+  list: any[]= EXPERIENCE;
   
 }

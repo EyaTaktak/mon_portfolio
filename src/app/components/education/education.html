@@ -15,8 +15,14 @@
         <span class="edu-period">{{e.period}}</span>
       </div>
 
+       <!-- Logo en haut à droite -->
+        <div class="edu-logo-wrapper">
+          <img [src]="e.logo" alt="{{e.school}} logo" class="edu-logo" />
+        </div>
+
+
       <div class="courses-section" *ngIf="e.courses && e.courses.length > 0">
-        <p class="courses-label">Key Courses:</p>
+        <p class="courses-label"></p>
         <div class="course-badges">
           <span class="course-badge" *ngFor="let course of e.courses">{{course}}</span>
         </div>

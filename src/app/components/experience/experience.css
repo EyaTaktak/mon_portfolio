@@ -96,13 +96,13 @@
 }
 
 /* Style des compétences à l'intérieur de l'extension */
-.tech-stack {
+/* .tech-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
+} */
 .main-description {
   margin-top: 10px;
   color: var(--text-muted);
@@ -116,11 +116,35 @@
   margin-bottom: 15px;
 }
 
-.company-name {
-  color: #00d1ff;
-  font-weight: 600;
-  display: block;
+
+ 
+ .header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.company-name {
+  font-size: 0.9rem;
+  color: #00d1ff;
+  text-decoration: none;
+}
+
 
 .duration {
   color: var(--text-muted);
@@ -150,12 +174,24 @@
   left: 0;
 }
 
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 15px;
+.tech-stack span {
+  background: rgba(0, 209, 255, 0.05);  /* fond très léger bleu */
+  border: 1px solid rgba(0, 209, 255, 0.3); /* bordure bleu douce */
+  color: #00d1ff; /* texte bleu clair */
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 400; /* texte normal, pas bold */
+  transition: all 0.2s ease;
 }
+
+.tech-stack span:hover {
+  background: #00d1ff;  /* fond bleu vif au hover */
+  color: #0f172a;       /* texte foncé au hover */
+}
+
+
+
 
 .company-link {
   display: inline-block;

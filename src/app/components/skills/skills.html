@@ -3,7 +3,15 @@
 
   <div class="skills-grid">
     <div *ngFor="let cat of list" class="skill-card" [ngClass]="cat.color">
-      <h3 class="category-title">{{cat.category}}</h3>
+      <!-- ------------- -->
+      <h3 class="category-title">
+  <span class="icon-wrapper" [ngClass]="cat.color">
+    <img [src]="cat.icone" alt="icon" class="category-icon"  />
+  </span>
+  <span>{{ cat.category }}</span>
+</h3>
+
+<!-- ------------- -->
       <div class="tags-container">
         <span *ngFor="let s of cat.skills" class="skill-tag">
           {{s}}

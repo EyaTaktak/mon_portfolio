@@ -30,11 +30,9 @@
 
 .edu-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 15px;
+  flex-direction: column; /* Toujours vertical */
+  align-items: flex-start; /* Garde tout aligné à gauche */
 }
-
 .edu-list {
   display: flex;
   flex-direction: column;
@@ -43,13 +41,15 @@
   max-width: 1100px; /* Aligné avec votre hero-content */
 }
 
+/* 1. La carte doit être en position relative pour que le logo "absolute" se place par rapport à elle */
 .edu-card {
+  position: relative; /* CRUCIAL pour le placement du logo */
   background: rgba(15, 23, 42, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: clamp(15px, 3vw, 30px); /* Padding interne adaptatif */
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
+  padding: 30px;
+  transition: all 0.3s ease;
+  overflow: hidden; /* Empêche les débordements */
 }
 
 .school-name a, .school-name span {
@@ -59,15 +59,48 @@
   text-decoration: none;
 }
 
-.degree-text {
-  color: #00d1ff; /* Couleur turquoise pour le diplôme */
-  font-weight: 600;
-  margin-top: 5px;
+.edu-logo {
+  /* On augmente la taille pour que le carré NVIDIA soit bien visible */
+  width: 85%; 
+  height: 85%;
+  object-fit: contain; /* Garde les proportions sans déformer */
+}
+/* Effet au hover sur la carte */
+.edu-card:hover .edu-logo-wrapper {
+  transform: scale(1.1); /* Légère mise en avant */
+  box-shadow: 0 6px 15px rgba(0, 209, 255, 0.3); /* Ombre plus prononcée */
 }
 
+
+.edu-logo-wrapper {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* Utiliser un fond blanc opaque ou très clair pour les logos d'entreprises */
+  background: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+}
+.degree-text {
+  color: #00d1ff;
+  font-weight: 600;
+  margin: 0;           /* enlève l’espace */
+  line-height: 1.2;    /* resserre légèrement */
+}
+
+
 .edu-period {
-  color: #64748b;
+  margin-top: 10px; /* Espace fixe sous le diplôme */
   font-size: 0.9rem;
+  color: #666;
 }
 
 .courses-label {
