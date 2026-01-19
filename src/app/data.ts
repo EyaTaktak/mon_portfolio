@@ -211,7 +211,7 @@ with an ETL pipeline in Databricks (Medallion Architecture).
 Intelligent web platform for managing medical appointments
 with a VGG16 CNN model to predict skin diseases (accuracy ~97%).
     `,
-    date: '2024',
+    date: '2025',
     tools: [
       'Flask',
       'MySQL',
