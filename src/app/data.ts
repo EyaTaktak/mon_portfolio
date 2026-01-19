@@ -129,8 +129,8 @@ export const PROJECTS = [
     name: 'Energy Optimization for Buildings',
     context: 'Green AI Hackathon',
     description: `
-Système d'apprentissage non supervisé pour détecter le gaspillage énergétique
-dans les bâtiments de bureaux et simuler une consommation optimisée.
+Unsupervised learning system to detect energy waste
+in office buildings and simulate optimized energy consumption.
     `,
     date: '2025',
     tools: [
@@ -155,8 +155,8 @@ dans les bâtiments de bureaux et simuler une consommation optimisée.
     name: 'Solar Panel Image Classification',
     context: 'Green AI Hackathon',
     description: `
-Modèle CNN basé sur ResNet18 pour classifier l’état des panneaux solaires
-pour la maintenance prédictive. Accuracy d'environ 95%.
+ResNet18-based CNN model to classify the condition of solar panels
+for predictive maintenance. Achieved ~95% accuracy.
     `,
     date: '2025',
     tools: [
@@ -181,8 +181,8 @@ pour la maintenance prédictive. Accuracy d'environ 95%.
     name: 'Air Quality Classification (Multimodal AI)',
     context: 'ENSTA-B Project',
     description: `
-Système de deep learning multimodal combinant images et données capteurs
-avec pipeline ETL Databricks (Medallion Architecture).
+Multimodal deep learning system combining images and sensor data
+with an ETL pipeline in Databricks (Medallion Architecture).
     `,
     date: '2025',
     tools: [
@@ -208,8 +208,8 @@ avec pipeline ETL Databricks (Medallion Architecture).
     name: 'Medical Office Platform',
     context: 'ENSTA-B Project',
     description: `
-Plateforme web intelligente pour la gestion des rendez-vous médicaux
-avec un modèle CNN VGG16 pour prédire les maladies cutanées (accuracy ~97%).
+Intelligent web platform for managing medical appointments
+with a VGG16 CNN model to predict skin diseases (accuracy ~97%).
     `,
     date: '2024',
     tools: [
@@ -237,7 +237,7 @@ avec un modèle CNN VGG16 pour prédire les maladies cutanées (accuracy ~97%).
     name: 'Intelligent Medical Drone Delivery Mobile Application',
     context: 'ENSTA-B Project',
     description: `
-Application mobile pour gérer les commandes et la livraison par drones autonomes.
+Mobile application to manage orders and deliveries using autonomous drones.
     `,
     date: '2024',
     tools: [
@@ -256,8 +256,8 @@ Application mobile pour gérer les commandes et la livraison par drones autonome
     name: 'Object Detection for Medical Drone Delivery Platform',
     context: 'ENSTA-B Project',
     description: `
-Détection d’objets pour le système de drones médicaux autonomes
-avec YOLO et OpenCV pour navigation.
+Object detection system for autonomous medical drones
+using YOLO and OpenCV for navigation.
     `,
     date: '2024',
     tools: [
@@ -274,7 +274,6 @@ avec YOLO et OpenCV pour navigation.
     link: 'https://github.com/EyaTaktak/Yolo_model'
   }
 ];
-
 
 
 // ===========================
