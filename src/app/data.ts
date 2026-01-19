@@ -232,6 +232,26 @@ with a VGG16 CNN model to predict skin diseases (accuracy ~97%).
       'UX/UI Design'
     ],
     link: 'https://github.com/EyaTaktak/Cabinet_Medical'
+  },{
+    name: 'Object Detection for Medical Drone Delivery Platform',
+    context: 'ENSTA-B Project',
+    description: `
+Object detection system for autonomous medical drones
+using YOLO and OpenCV for navigation.
+    `,
+    date: '2024',
+    tools: [
+      'YOLO',
+      'OpenCV',
+      'Python',
+      'Computer Vision'
+    ],
+    skills: [
+      'Object Detection',
+      'Computer Vision',
+      'Autonomous Navigation'
+    ],
+    link: 'https://github.com/EyaTaktak/Yolo_model'
   },
   {
     name: 'Intelligent Medical Drone Delivery Mobile Application',
@@ -252,27 +272,7 @@ Mobile application to manage orders and deliveries using autonomous drones.
     ],
     link: 'https://github.com/EyaTaktak/Drone-Application'
   },
-  {
-    name: 'Object Detection for Medical Drone Delivery Platform',
-    context: 'ENSTA-B Project',
-    description: `
-Object detection system for autonomous medical drones
-using YOLO and OpenCV for navigation.
-    `,
-    date: '2024',
-    tools: [
-      'YOLO',
-      'OpenCV',
-      'Python',
-      'Computer Vision'
-    ],
-    skills: [
-      'Object Detection',
-      'Computer Vision',
-      'Autonomous Navigation'
-    ],
-    link: 'https://github.com/EyaTaktak/Yolo_model'
-  }
+  
 ];
 
 
