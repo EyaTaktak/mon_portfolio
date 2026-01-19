@@ -37,6 +37,7 @@
   gap: 10px;
 }
 
+/* Badge par défaut */
 .skill-tag {
   padding: 6px 14px;
   border-radius: 20px;
@@ -44,7 +45,89 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #cbd5e1;
+  transition: all 0.3s ease;
 }
+
+/* Effet hover : prend la couleur du card parent */
+.skill-card.orange .skill-tag:hover {
+  background: rgba(249, 115, 22, 0.2);
+  color: #f97316;
+  border-color: #f97316;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(249, 115, 22, 0.3);
+}
+
+.skill-card.blue .skill-tag:hover {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+.skill-card.cyan .skill-tag:hover {
+  background: rgba(0, 209, 255, 0.2);
+  color: #00d1ff;
+  border-color: #00d1ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 209, 255, 0.3);
+}
+
+.skill-card.purple .skill-tag:hover {
+  background: rgba(168, 85, 247, 0.2);
+  color: #a855f7;
+  border-color: #a855f7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(168, 85, 247, 0.3);
+}
+
+.skill-card.green .skill-tag:hover {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border-color: #10b981;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+.skill-card.teal .skill-tag:hover {
+  background: rgba(20, 184, 166, 0.2);
+  color: #14b8a6;
+  border-color: #14b8a6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(20, 184, 166, 0.3);
+}
+
+.skill-card.yellow .skill-tag:hover {
+  background: rgba(234, 179, 8, 0.2);
+  color: #eab308;
+  border-color: #eab308;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(234, 179, 8, 0.3);
+}
+
+/* On définit la couleur pour chaque catégorie */
+.blue   { --category-color: #3b82f6; --bg-hover: rgba(59, 130, 246, 0.2); }
+.cyan   { --category-color: #00d1ff; --bg-hover: rgba(0, 209, 255, 0.2); }
+.purple { --category-color: #a855f7; --bg-hover: rgba(168, 85, 247, 0.2); }
+.green  { --category-color: #10b981; --bg-hover: rgba(16, 185, 129, 0.2); }
+.orange { --category-color: #f97316; --bg-hover: rgba(249, 115, 22, 0.2); }
+.teal   { --category-color: #14b8a6; --bg-hover: rgba(20, 184, 166, 0.2); }
+.yellow { --category-color: #eab308; --bg-hover: rgba(234, 179, 8, 0.2); }
+
+/* Règle unique pour le hover des tags utilisant la variable */
+.skill-tag:hover {
+    background: var(--bg-hover) !important;
+    color: var(--category-color) !important;
+    border-color: var(--category-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--bg-hover);
+}
+
+/* Application aux titres et icônes pour simplifier le reste du code */
+.category-title { color: var(--category-color); }
+.icon-wrapper { background-color: var(--category-color) !important; }
+.skill-card:hover { border-color: var(--category-color); }
+
 
 /* --- GESTION DES COULEURS --- */
 .blue .category-title { color: #3b82f6; }

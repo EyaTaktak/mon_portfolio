@@ -353,23 +353,7 @@ export const CERTIFICATIONS = [
 // SKILLS
 // ===========================
 export const SKILLS = [
-  {
-    category: "Programming Languages & Web Technologies",
-    skills: [
-      'Python',
-      'C / C++',
-      'Java',
-      'JavaScript',
-      'TypeScript',
-      'Dart',
-      'SQL',
-      'HTML5',
-      'CSS3',
-      'Angular'
-    ],
-    icone: 'assets/1.gif',
-    color: "blue"
-  },
+  
   {
     category: "Artificial Intelligence & Machine Learning",
     skills: [
@@ -386,7 +370,7 @@ export const SKILLS = [
       'Model Evaluation & Optimization'
     ],
     icone: 'assets/assistant-ia1.gif',
-    color: "cyan"
+    color: "blue"
   },
   {
     category: "Data Engineering & ETL",
@@ -399,7 +383,7 @@ export const SKILLS = [
       'Data Quality & Monitoring'
     ],
     icone: 'assets/prg.gif',
-    color: "teal"
+    color: "cyan"
   },
   {
     category: "Frameworks, Libraries & Visualization",
@@ -413,10 +397,27 @@ export const SKILLS = [
       'YOLO',
       'Matplotlib',
       'Seaborn',
-      'Power BI',
-      'Flask'
+      'Power BI'
     ],
     icone: 'assets/librairie1.gif',
+    color: "teal"
+  },
+  {
+    category: "Programming Languages & Web Technologies",
+    skills: [
+      'Python',
+      'C / C++',
+      'Java',
+      'JavaScript',
+      'TypeScript',
+      'Dart',
+      'SQL',
+      'HTML5',
+      'CSS3',
+      'Angular',
+      'Flask'
+    ],
+    icone: 'assets/1.gif',
     color: "purple"
   },
   {
@@ -426,7 +427,6 @@ export const SKILLS = [
       'Apache Spark (PySpark)',
       'Docker',
       'CI / CD Pipelines',
-      'REST APIs',
       'Firebase',
       'Linux Basics',
       'Git & GitHub'
@@ -440,7 +440,7 @@ export const SKILLS = [
       'MySQL',
       'SQL Optimization',
       'Data Modeling',
-      'Excel (Advanced Formulas & Data Analysis)'
+      'Excel'
     ],
     icone: 'assets/db.png',
     color: "yellow"
