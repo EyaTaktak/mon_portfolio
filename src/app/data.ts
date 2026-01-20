@@ -126,6 +126,52 @@ export const EDUCATION = [
 // ===========================
 export const PROJECTS = [ 
   {
+    name: 'Personal Portfolio Website',
+    context: 'Personal Project',
+    description: `
+Architected a production-ready infrastructure using multi-stage Docker builds and an optimized Nginx configuration for
+high-performance SPA routing and scalability. Deployed the Angular web application on Render with CI/CD pipelines via GitHub Actions for automated testing and deployment.`,
+    date: '2026',
+    tools: [
+      'Angular',
+      'TypeScript',
+      'HTML',
+      'CSS',
+      "CI/CD",
+      "Docker",
+      "nginx","Github Actions",
+      "Render"
+    ],
+    skills: [
+      'Web Development',"Devops"
+    ],
+    link: 'https://eya-portfolio.onrender.com/'
+  },
+  {
+    name: 'Customer Sentiment Analysis with LangChain',
+    context: 'NVIDIA LLM Applications Course',
+    description: `
+LangChain pipeline analyzing customer emails to identify product categories with most complaints and store locations
+with highest negative sentiment.`,
+    tools: [
+      "Python",
+      "LangChain",
+      "NLP",
+      "Sentiment Analysis",
+      "openAI API",
+      "Pandas"
+    ],
+    skills: [
+      'NLP',
+      'LLM Applications',
+      'Sentiment Analysis',
+      'Data Analysis'
+    
+    ],
+    link: ''
+  },
+
+  {
     name: 'Energy Optimization for Buildings',
     context: 'Green AI Hackathon',
     description: `
