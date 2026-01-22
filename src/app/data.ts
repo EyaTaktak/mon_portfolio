@@ -158,7 +158,7 @@ with highest negative sentiment.`,
       "LangChain",
       "NLP",
       "Sentiment Analysis",
-      "Llama 3.1",
+      "Llama 3.1 8B",
       "Pandas"
     ],
     skills: [
@@ -174,11 +174,11 @@ with highest negative sentiment.`,
     date: '2025',
     context: 'NVIDIA LLM Applications Course',
     description: `
-– Designed and implemented end-to-end LLM pipelines using LangChain, including prompt engineering, structured outputs,
+Designed and implemented end-to-end LLM pipelines using LangChain, including prompt engineering, structured outputs,
 batch and streaming inference, conversation memory, and agent-based reasoning with tool integration for text analysis and
 automation tasks.
 `,
-    tools: ['Python', 'LangChain', 'OpenAI API', 'Prompt Engineering', 'LCEL', 'NLP', 'Pandas'],
+    tools: ['Python', 'LangChain', 'Llama 3.1 8B', 'Prompt Engineering', 'LCEL', 'NLP', 'Pandas'],
     skills: [
       'LLM Applications',
       'Prompt Engineering',
