@@ -162,7 +162,6 @@ with highest negative sentiment.`,
       "Pandas"
     ],
     skills: [
-      'NLP',
       'LLM Applications',
       'Sentiment Analysis',
       'Data Analysis'
@@ -170,7 +169,25 @@ with highest negative sentiment.`,
     ],
     link: ''
   },
-
+{
+    name: 'LLM Applications Development with LangChain',
+    date: '2025',
+    context: 'NVIDIA LLM Applications Course',
+    description: `
+– Designed and implemented end-to-end LLM pipelines using LangChain, including prompt engineering, structured outputs,
+batch and streaming inference, conversation memory, and agent-based reasoning with tool integration for text analysis and
+automation tasks.
+`,
+    tools: ['Python', 'LangChain', 'OpenAI API', 'Prompt Engineering', 'LCEL', 'NLP', 'Pandas'],
+    skills: [
+      'LLM Applications',
+      'Prompt Engineering',
+      'Structured Outputs',
+      'Streaming Inference',
+      'Conversation Memory',
+      'Agent-Based Reasoning'
+    ]
+  },
   {
     name: 'Energy Optimization for Buildings',
     context: 'Green AI Hackathon',
