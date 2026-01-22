@@ -167,7 +167,7 @@ with highest negative sentiment.`,
       'Data Analysis'
     
     ],
-    link: ''
+    link: 'https://sentiment-analyser-f90e.onrender.com/'
   },
 {
     name: 'LLM Applications Development with LangChain',
