@@ -159,7 +159,10 @@ with highest negative sentiment.`,
       "NLP",
       "Sentiment Analysis",
       "Llama 3.1 8B",
-      "Pandas"
+      "Pandas","CI/CD",
+      "Docker",
+      "nginx","Github Actions",
+      "Render"
     ],
     skills: [
       'LLM Applications',
