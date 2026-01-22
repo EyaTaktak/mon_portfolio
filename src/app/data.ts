@@ -158,7 +158,7 @@ with highest negative sentiment.`,
       "LangChain",
       "NLP",
       "Sentiment Analysis",
-      "openAI API",
+      "Llama 3.1",
       "Pandas"
     ],
     skills: [
