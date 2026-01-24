@@ -126,6 +126,37 @@ export const EDUCATION = [
 // ===========================
 export const PROJECTS = [ 
   {
+    name: 'LingoMate AI - Hybrid English Coach',
+    context: 'Full Stack AI Project',
+    description: `
+Developed an interactive AI-powered English learning platform featuring a real-time conversational coach. 
+Engineered a robust FastAPI backend integrated with NVIDIA's Llama-3.1 LLM to provide level-adaptive 
+grammar corrections and pedagogical feedback. Implemented advanced speech features including 
+Speech-to-Text (STT) via Google Speech Recognition and Text-to-Speech (TTS) using gTTS, 
+allowing users to practice both writing and pronunciation. Architected a cross-origin secure 
+communication layer between the Angular frontend and the Python backend, deployed with automated 
+environment configuration.`,
+    date: '2026',
+    tools: [
+      'Angular',
+      'FastAPI',
+      'Python',
+      'NVIDIA AI (Llama 3.1)',
+      'Speech Recognition',
+      'gTTS',
+      'Pydub',
+      'Uvicorn',
+      'Render'
+    ],
+    skills: [
+      'Artificial Intelligence',
+      'Natural Language Processing (NLP)',
+      'Backend Development',
+      'API Design'
+    ],
+    link: ["https://drive.google.com/file/d/1rXkDFqmPFKMzEzD_YdWn73X0gJH8LGAD/view?usp=drive_link"]
+},
+  {
     name: 'Personal Portfolio Website',
     context: 'Personal Project',
     description: `
@@ -159,7 +190,7 @@ with highest negative sentiment.`,
       "NLP",
       "Sentiment Analysis",
       "Llama 3.1 8B",
-      "Pandas","CI/CD",
+      "Pandas", "Gradio", "CI/CD",
       "Docker",
       "nginx","Github Actions",
       "Render"
